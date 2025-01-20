@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Realtime Vehicles</title>
+    <title>Realtime Map</title>
    
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -358,37 +358,12 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Realtime Vehicle Check</h1>
-
-                </div>
-                <!-- /.container-fluid -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-primary">Vehicle Records</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="table-responsive">
-                        <table class="table table-bordered" id="vehicleTable" width="100%" cellspacing="0">
-                            <thead>
-                              <tr>
-                                <th>License Plate</th>
-                                <th>Colour</th>
-                                <th>Make</th>
-                                <th>Tax Status</th>
-                                <th>MOT Status</th>
-                                <th>Timestamp</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- New records will be dynamically appended here -->
-                            </tbody>
-                          </table>
-                      </div>
-                    </div>
+                    <h1 class="h3 mb-4 text-gray-800">Vehicle Locations</h1>
+                    <!-- The map container must have a defined height -->
+                    <div id="map" style="height: 600px; width: 100%;"></div>
                   </div>
-            </div>
+                <!-- /.container-fluid -->
+                
             <!-- End of Main Content -->
             
             <!-- Footer -->
@@ -432,7 +407,7 @@
         </div>
     </div>
     <!-- Firebase ES Modules -->
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/locations.js"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

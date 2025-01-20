@@ -11279,3 +11279,9 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+#map {
+  height: 600px; /* Set the desired height */
+  width: 100%;   /* Full width of the container */
+  border: 1px solid #e3e6f0; /* Optional: Add a border for better visibility */
+}
+
